@@ -1,2 +1,2 @@
-# AkashHK-data-analyst-portfolio.github.io
+# AkashHK-data-analyst-portfolio
 Personal portfolio showcasing data analytics projects and skills
