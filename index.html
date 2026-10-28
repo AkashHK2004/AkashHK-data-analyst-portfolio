@@ -1,62 +1,306 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Akash H K | Data Analyst Portfolio</title>
 <meta name="description" content="Data analytics projects using SQL, Python, Excel, Tableau and Power BI by Akash H K, Mechanical Engineering graduate (2026) from NITK Surathkal.">
 <meta name="theme-color" content="#F2F5F9">
 <meta property="og:title" content="Akash H K | Data Analyst Portfolio">
 <meta property="og:description" content="Data analytics projects using SQL, Python, Excel, Tableau and Power BI.">
 <meta property="og:type" content="website">
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#F2F5F9;--ink:#12203A;--mute:#53627C;--line:#D3DCE8;--acc:#1D5FD1;--hi:#FFC93C}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:64px}
-body{margin:0;font:400 17px/1.65 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
-a{color:var(--acc)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
-.wrap{max-width:960px;margin:0 auto;padding:0 24px}
-nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto;white-space:nowrap}
-nav b{margin-right:auto;font-weight:800}
-nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
-nav a:hover{color:var(--acc)}
-.hero{background-image:linear-gradient(rgba(29,95,209,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(29,95,209,.09) 1px,transparent 1px);background-size:32px 32px;border-bottom:1px solid var(--line)}
-.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-top:88px;padding-bottom:88px}
-h1{margin:0;font-size:clamp(44px,8vw,80px);line-height:1;letter-spacing:-.035em;font-weight:800}
-.role{margin:18px 0 0;font-size:clamp(20px,3vw,26px);font-weight:600;line-height:1.3;border-left:5px solid var(--hi);padding-left:14px}
-.hero p.lead{max-width:48ch;color:var(--mute);margin:20px 0 28px}
-.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--ink);margin:0 10px 10px 0}
-.btn.fill{background:var(--ink);color:#fff}
-.btn.line{color:var(--ink)}
-.btn:hover{background:var(--acc);border-color:var(--acc);color:#fff}
-.hero svg{width:100%;height:auto}
-section{padding:72px 0;border-bottom:1px solid var(--line)}
-h2{margin:0 0 28px;font-size:30px;letter-spacing:-.02em;font-weight:800}
-h3{margin:0;font-size:19px;font-weight:800}
-.mute{color:var(--mute)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.item{padding:18px 0;border-top:1px solid var(--line)}
-.item p{margin:6px 0 0}
-.proj{display:grid;grid-template-columns:1fr 1.7fr;gap:8px 32px;padding:24px 0;border-top:1px solid var(--line)}
-.proj p{margin:0 0 10px}
-.proj .tools{color:var(--mute);font-size:15px;font-weight:600}
-.proj .go{font-weight:600;margin:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 24px}
-.chips span{padding:5px 12px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:15px;font-weight:600}
-footer{padding:32px 0;color:var(--mute);font-size:15px}
-@media(max-width:760px){.hero .wrap,.two,.proj{grid-template-columns:1fr}.hero svg{max-width:360px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root {
+  --bg: #F2F5F9;
+  --ink: #12203A;
+  --mute: #53627C;
+  --line: #D3DCE8;
+  --acc: #1D5FD1;
+  --hi: #FFC93C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+body {
+  margin: 0;
+  font: 400 17px/1.65 Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+a {
+  color: var(--acc);
+  overflow-wrap: anywhere;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--hi);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+nav .wrap {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  height: 56px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+nav b {
+  margin-right: auto;
+  font-weight: 800;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: var(--acc);
+}
+
+.hero {
+  background-image:
+    linear-gradient(rgba(29,95,209,.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(29,95,209,.09) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 40px;
+  align-items: center;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(44px, 8vw, 80px);
+  line-height: 1;
+  letter-spacing: -.035em;
+  font-weight: 800;
+}
+
+.role {
+  margin: 18px 0 0;
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 600;
+  line-height: 1.3;
+  border-left: 5px solid var(--hi);
+  padding-left: 14px;
+}
+
+.hero p.lead {
+  max-width: 48ch;
+  color: var(--mute);
+  margin: 20px 0 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--ink);
+  margin: 0 10px 10px 0;
+}
+
+.btn.fill {
+  background: var(--ink);
+  color: #fff;
+}
+
+.btn.line {
+  color: var(--ink);
+}
+
+.btn:hover {
+  background: var(--acc);
+  border-color: var(--acc);
+  color: #fff;
+}
+
+.hero svg {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 72px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  margin: 0 0 28px;
+  font-size: 30px;
+  letter-spacing: -.02em;
+  font-weight: 800;
+}
+
+h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.mute {
+  color: var(--mute);
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.item {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.item p {
+  margin: 6px 0 0;
+}
+
+.item h3 a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.item h3 a:hover {
+  color: var(--acc);
+  text-decoration: underline;
+}
+
+.cert-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}
+
+.proj {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 8px 32px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+
+.proj p {
+  margin: 0 0 10px;
+}
+
+.proj .tools {
+  color: var(--mute);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.proj .go {
+  font-weight: 600;
+  margin: 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 24px;
+}
+
+.chips span {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+footer {
+  padding: 32px 0;
+  color: var(--mute);
+  font-size: 15px;
+}
+
+@media (max-width: 760px) {
+  .hero .wrap,
+  .two,
+  .proj {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .wrap {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .hero svg {
+    max-width: 360px;
+  }
+
+  section {
+    padding: 52px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 </style>
 </head>
+
 <body>
 
-<nav aria-label="Main">
+<nav aria-label="Main navigation">
   <div class="wrap">
     <b>Akash H K</b>
     <a href="#home">Home</a>
@@ -74,15 +318,32 @@ footer{padding:32px 0;color:var(--mute);font-size:15px}
   <div class="wrap">
     <div>
       <h1>Akash H K</h1>
+
       <p class="role">Data Analyst | SQL, Python, Excel and BI tools</p>
-      <p class="lead">Mechanical Engineering graduate (2026) from NITK Surathkal, working on data analysis projects that use SQL, Python, Excel and visualization tools to explore business performance and operational problems.</p>
+
+      <p class="lead">
+        Mechanical Engineering graduate (2026) from NITK Surathkal,
+        working on data analysis projects that use SQL, Python, Excel
+        and visualization tools to explore business performance and
+        operational problems.
+      </p>
+
       <a class="btn fill" href="#projects">View projects</a>
       <a class="btn line" href="#resume">Open resume</a>
     </div>
+
     <svg viewBox="0 0 360 260" role="img" aria-label="Illustration of a bar and line chart">
       <rect x="1" y="1" width="358" height="258" rx="6" fill="#fff" stroke="#12203A" stroke-width="2"/>
-      <g stroke="#D3DCE8"><path d="M30 60H340M30 110H340M30 160H340M30 210H340"/></g>
-      <g fill="#1D5FD1"><rect x="48" y="150" width="34" height="60"/><rect x="108" y="120" width="34" height="90"/><rect x="168" y="135" width="34" height="75"/><rect x="228" y="90" width="34" height="120"/><rect x="288" y="62" width="34" height="148"/></g>
+      <g stroke="#D3DCE8">
+        <path d="M30 60H340M30 110H340M30 160H340M30 210H340"/>
+      </g>
+      <g fill="#1D5FD1">
+        <rect x="48" y="150" width="34" height="60"/>
+        <rect x="108" y="120" width="34" height="90"/>
+        <rect x="168" y="135" width="34" height="75"/>
+        <rect x="228" y="90" width="34" height="120"/>
+        <rect x="288" y="62" width="34" height="148"/>
+      </g>
       <polyline points="65,130 125,95 185,110 245,64 305,40" fill="none" stroke="#12203A" stroke-width="3"/>
       <circle cx="305" cy="40" r="8" fill="#FFC93C" stroke="#12203A" stroke-width="2"/>
       <path d="M30 210H340" stroke="#12203A" stroke-width="2"/>
@@ -93,12 +354,14 @@ footer{padding:32px 0;color:var(--mute);font-size:15px}
 <section id="about">
   <div class="wrap">
     <h2>About Me</h2>
+
     <p>
       I'm a 2026 Mechanical Engineering graduate from NITK Surathkal,
       building my career in data analytics. Through hands-on projects,
       I've worked with SQL, Python, Excel, Tableau, and Power BI to
       clean data, analyze trends, and understand business performance.
     </p>
+
     <p>
       My projects include supply chain analysis, retail sales analysis,
       student placement analysis, and credit card fraud detection.
@@ -106,6 +369,7 @@ footer{padding:32px 0;color:var(--mute);font-size:15px}
       querying datasets, validating results, and presenting findings
       through visualizations.
     </p>
+
     <p>
       I'm currently looking for entry-level opportunities in Data
       Analytics, Business Analysis, and MIS where I can apply my
@@ -117,96 +381,161 @@ footer{padding:32px 0;color:var(--mute);font-size:15px}
 
 <section id="education">
   <div class="wrap">
-    <h2>Education and certifications</h2>
+    <h2>Education and Certifications</h2>
+
     <div class="two">
       <div>
-        <div class="item"><h3>B.Tech in Mechanical Engineering</h3><p class="mute">National Institute of Technology Karnataka (NITK), Surathkal. Graduated 2026.</p></div>
+        <div class="item">
+          <h3>B.Tech in Mechanical Engineering</h3>
+          <p class="mute">
+            National Institute of Technology Karnataka (NITK),
+            Surathkal · Graduated 2026
+          </p>
+        </div>
       </div>
+
       <div>
-        
-<div class="item">
-  <h3>
-    <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_948aJYniaB6oGGQZS_1784732300201_completion_certificate.pdf"
-       target="_blank" rel="noopener noreferrer">
-      Deloitte Data Analytics Job Simulation
-    </a>
-  </h3>
-  <p class="mute">Forage · Completed ·
-    <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_948aJYniaB6oGGQZS_1784732300201_completion_certificate.pdf"
-       target="_blank" rel="noopener noreferrer">View Certificate</a>
-  </p>
-</div>
+        <div class="item">
+          <h3>
+            <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_948aJYniaB6oGGQZS_1784732300201_completion_certificate.pdf"
+               target="_blank" rel="noopener noreferrer">
+              Deloitte Data Analytics Job Simulation
+            </a>
+          </h3>
+          <p class="mute">Forage · Completed</p>
+          <p>
+            <a class="cert-link"
+               href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_948aJYniaB6oGGQZS_1784732300201_completion_certificate.pdf"
+               target="_blank" rel="noopener noreferrer">
+              View Certificate ↗
+            </a>
+          </p>
+        </div>
 
-<div class="item">
-  <h3>
-    <a href="https://www.coursera.org/account/accomplishments/verify/3ZG5AZUVKF6E?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
-       target="_blank" rel="noopener noreferrer">
-      Supervised Machine Learning: Regression and Classification
-    </a>
-  </h3>
-  <p class="mute">DeepLearning.AI and Stanford · Completed ·
-    <a href="https://www.coursera.org/account/accomplishments/verify/3ZG5AZUVKF6E?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
-       target="_blank" rel="noopener noreferrer">View Certificate</a>
-  </p>
-</div>
+        <div class="item">
+          <h3>
+            <a href="https://www.coursera.org/account/accomplishments/verify/3ZG5AZUVKF6E?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
+               target="_blank" rel="noopener noreferrer">
+              Supervised Machine Learning: Regression and Classification
+            </a>
+          </h3>
+          <p class="mute">DeepLearning.AI and Stanford · Completed</p>
+          <p>
+            <a class="cert-link"
+               href="https://www.coursera.org/account/accomplishments/verify/3ZG5AZUVKF6E?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
+               target="_blank" rel="noopener noreferrer">
+              View Certificate ↗
+            </a>
+          </p>
+        </div>
 
-<div class="item">
-  <h3>
-    <a href="https://coursera.org/share/a0cd76a6bd40c3ad40b79739a5b64593"
-       target="_blank" rel="noopener noreferrer">
-      IBM Data Analyst Professional Certificate
-    </a>
-  </h3>
-  <p class="mute">Coursera · Completed ·
-    <a href="https://coursera.org/share/a0cd76a6bd40c3ad40b79739a5b64593"
-       target="_blank" rel="noopener noreferrer">View Certificate</a>
-  </p>
-</div>
-
+        <div class="item">
+          <h3>
+            <a href="https://coursera.org/share/a0cd76a6bd40c3ad40b79739a5b64593"
+               target="_blank" rel="noopener noreferrer">
+              IBM Data Analyst Professional Certificate
+            </a>
+          </h3>
+          <p class="mute">Coursera · Completed</p>
+          <p>
+            <a class="cert-link"
+               href="https://coursera.org/share/a0cd76a6bd40c3ad40b79739a5b64593"
+               target="_blank" rel="noopener noreferrer">
+              View Certificate ↗
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="experience">
   <div class="wrap">
     <h2>Experience and leadership</h2>
-    <div class="item"><h3>Executive Member, E-Cell NITK</h3><p>Handled sponsor relations and coordinated E-Summit.</p></div>
-    <div class="item"><h3>CFD Internship, IIT Tirupati</h3><p>Ran flow simulations in ANSYS Fluent with the k-ε turbulence model and a porous zone, and validated results with a mesh independence study.</p></div>
+
+    <div class="item">
+      <h3>Executive Member, E-Cell NITK</h3>
+      <p>Handled sponsor relations and coordinated E-Summit.</p>
+    </div>
+
+    <div class="item">
+      <h3>CFD Internship, IIT Tirupati</h3>
+      <p>
+        Ran flow simulations in ANSYS Fluent with the k-ε turbulence
+        model and a porous zone, and validated results with a mesh
+        independence study.
+      </p>
+    </div>
   </div>
 </section>
 
 <section id="projects">
   <div class="wrap">
     <h2>Projects</h2>
-    <!-- Tip: add one verified finding and a screenshot to each project once you have them. -->
+
     <article class="proj">
       <h3>Supply Chain Fulfillment and Profitability Analytics</h3>
       <div>
-        <p>Analyzed 180,000+ order-item records from the DataCo Smart Supply Chain dataset to find where delivery delays and weak margins occur by shipping mode, market and category. Prepared the data in Python (Pandas), wrote MySQL queries using CTEs and window functions, and built a Power BI dashboard tracking sales, profit, profit margin and late-delivery rate.</p>
+        <p>
+          Analyzed 180,000+ order-item records from the DataCo Smart
+          Supply Chain dataset to find where delivery delays and weak
+          margins occur by shipping mode, market and category. Prepared
+          the data in Python (Pandas), wrote MySQL queries using CTEs
+          and window functions, and built a Power BI dashboard tracking
+          sales, profit, profit margin and late-delivery rate.
+        </p>
         <p class="tools">Python, MySQL, Power BI</p>
-        <p class="go"><a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a></p>
+        <p class="go">
+          <a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+        </p>
       </div>
     </article>
+
     <article class="proj">
       <h3>Retail Sales Analysis</h3>
       <div>
-        <p>Designed a 4-table SQL schema with 10,000+ records and answered sales questions with joins and aggregations. Built a Tableau dashboard that tracks 5 sales KPIs.</p>
+        <p>
+          Designed a 4-table SQL schema with 10,000+ records and
+          answered sales questions with joins and aggregations.
+          Built a Tableau dashboard that tracks 5 sales KPIs.
+        </p>
         <p class="tools">SQL, Excel, Tableau</p>
-        <p class="go"><a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a></p>
+        <p class="go">
+          <a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+        </p>
       </div>
     </article>
+
     <article class="proj">
       <h3>Student Placement Analysis</h3>
       <div>
-        <p>Explored how placement outcomes relate to academic performance, training and internships across 10,000 student records. Cleaned the data, queried it in SQL, and summarized results with Excel pivot tables and Tableau.</p>
+        <p>
+          Explored how placement outcomes relate to academic
+          performance, training and internships across 10,000 student
+          records. Cleaned the data, queried it in SQL, and summarized
+          results with Excel pivot tables and Tableau.
+        </p>
         <p class="tools">SQL, Excel, Tableau</p>
-        <p class="go"><a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a></p>
+        <p class="go">
+          <a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+        </p>
       </div>
     </article>
+
     <article class="proj">
       <h3>Credit Card Fraud Detection</h3>
       <div>
-        <p>Compared Logistic Regression, Decision Tree and Random Forest models on 284,807 transactions where only about 0.17% are fraud. Used SMOTE to handle the class imbalance; Random Forest reached a 0.97 ROC-AUC.</p>
+        <p>
+          Compared Logistic Regression, Decision Tree and Random Forest
+          models on 284,807 transactions where only about 0.17% are
+          fraud. Used SMOTE to handle the class imbalance; Random Forest
+          reached a 0.97 ROC-AUC.
+        </p>
         <p class="tools">Python, Scikit-learn</p>
-        <p class="go"><a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a></p>
+        <p class="go">
+          <a href="PROJECT_LINK" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+        </p>
       </div>
     </article>
   </div>
@@ -215,12 +544,30 @@ footer{padding:32px 0;color:var(--mute);font-size:15px}
 <section id="skills">
   <div class="wrap">
     <h2>Skills</h2>
+
     <h3>Data and analysis</h3>
-    <div class="chips"><span>SQL (MySQL)</span><span>Python</span><span>Pandas</span><span>NumPy</span><span>Excel</span></div>
+    <div class="chips">
+      <span>SQL (MySQL)</span>
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Excel</span>
+    </div>
+
     <h3>Visualization and ML</h3>
-    <div class="chips"><span>Tableau</span><span>Power BI</span><span>Matplotlib</span><span>Scikit-learn</span></div>
+    <div class="chips">
+      <span>Tableau</span>
+      <span>Power BI</span>
+      <span>Matplotlib</span>
+      <span>Scikit-learn</span>
+    </div>
+
     <h3>Tools</h3>
-    <div class="chips"><span>Jupyter</span><span>Git and GitHub</span><span>ANSYS Fluent</span></div>
+    <div class="chips">
+      <span>Jupyter</span>
+      <span>Git and GitHub</span>
+      <span>ANSYS Fluent</span>
+    </div>
   </div>
 </section>
 
@@ -228,37 +575,50 @@ footer{padding:32px 0;color:var(--mute);font-size:15px}
   <div class="wrap">
     <h2>Resume</h2>
     <p>My latest resume is available to view and download.</p>
-    <a class="btn fill" href="https://drive.google.com/drive/folders/15ZYsR_NFaQzkxsjM9SRRbSZ3AqhGici_?usp=drive_link" target="_blank" rel="noopener noreferrer">View resume</a>
+
+    <a class="btn fill"
+       href="https://drive.google.com/drive/folders/15ZYsR_NFaQzkxsjM9SRRbSZ3AqhGici_?usp=drive_link"
+       target="_blank" rel="noopener noreferrer">
+      View resume
+    </a>
   </div>
 </section>
 
 <section id="contact" style="border-bottom:0">
- <div class="wrap">
+  <div class="wrap">
     <h2>Contact</h2>
 
-    <p>Email:
+    <p>
+      Email:
       <a href="mailto:akashhk37@gmail.com">akashhk37@gmail.com</a>
     </p>
 
-    <p>LinkedIn:
+    <p>
+      LinkedIn:
       <a href="https://www.linkedin.com/in/akash-h-k-3219b8262/"
-         target="_blank"
-         rel="noopener noreferrer">View LinkedIn Profile</a>
+         target="_blank" rel="noopener noreferrer">
+        View LinkedIn Profile
+      </a>
     </p>
 
-    <p>GitHub:
+    <p>
+      GitHub:
       <a href="https://github.com/AkashHK2004"
-         target="_blank"
-         rel="noopener noreferrer">View GitHub Profile</a>
+         target="_blank" rel="noopener noreferrer">
+        View GitHub Profile
+      </a>
     </p>
 
-    <p>Phone:
+    <p>
+      Phone:
       <a href="tel:+917676150583">+91 76761 50583</a>
     </p>
   </div>
 </section>
 
-<footer><div class="wrap">© 2026 Akash H K</div></footer>
+<footer>
+  <div class="wrap">© 2026 Akash H K</div>
+</footer>
 
 </body>
 </html>
